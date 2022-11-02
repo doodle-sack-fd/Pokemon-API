@@ -34,6 +34,7 @@ h1 {
 }
 
 h2 {
+    margin-top: 16px;
     margin-bottom: 17px;
     font-weight: 500;
     font-size: 1.375rem;
@@ -59,7 +60,9 @@ ul {
 ul li {
     flex-grow: 1;
 }
-
+#hp{
+    margin-bottom: 10px;
+}
 .button {
     display: block;
     width: 100%;
@@ -80,12 +83,12 @@ ul li {
 }
 
 .button:focus-visible {
-    border: 2px solid #ffffff;
+    background-color: goldenrod;
     outline: none;
 }
 
 .button:focus {
-    border: 2px solid #ffffff;
+    background-color: goldenrod;
     outline: none;
 }
 
@@ -96,7 +99,42 @@ ul li {
 .button-green {
     background-color: ;
 }
+.click{
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    display: block;
+    margin: 0 auto;
+    width:50%;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 9px 15px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: inherit;
+    transition: background-color 0.2s linear;
+}
 
+.click:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.click:focus-visible {
+    background-color: goldenrod;
+    outline: none;
+}
+
+.click:focus {
+    background-color: goldenrod;
+    outline: none;
+}
+
+.click:disabled {
+    cursor: not-allowed;
+}
 .back {
     margin-left: 25px;
     padding: 55px 40px;
